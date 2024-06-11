@@ -167,6 +167,18 @@ OR
 
 <!-- Your Query Goes Here -->
 
+{
+  filter: {
+    founded_day: {
+      $lte: 7
+    }
+  },
+  sort: {
+    'acquisitions.price_amount': -1
+  },
+  limit: 10
+}
+
 <br>
 
 ## Iteration 3 (Bonus)
